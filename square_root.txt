@@ -1,0 +1,15 @@
+(define (square x) (* x x))
+(define (_sqrt x y)
+        (cond   ((= (square y) x) y)
+                ((> (square y) x) -1)
+                (else (_sqrt x (+ y 1))))
+        )
+
+(define (sqrt x)
+        (if (< x 0) -1 (_sqrt x 0))
+        )
+
+(= (sqrt 49) 7)
+(= (sqrt 0) 0)
+(= (sqrt -7) -1)
+(= (sqrt 8) -1)          
