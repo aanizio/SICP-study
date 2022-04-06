@@ -79,8 +79,6 @@
 	(expo_ b n b)
 )
 
-; TODO: o expo-even deve testar se é even para que casos com n=6 funcionem, dessa forma quando n/2 quebrar em n=3 ficará ímpar e chamará a outra função
-
 #|
 expo_ 2 4 (* 2 2)
 expo_ 2 4 4
